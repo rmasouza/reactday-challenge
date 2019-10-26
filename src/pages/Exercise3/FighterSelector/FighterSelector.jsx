@@ -12,7 +12,7 @@ function FighterSelector() {
     }
 
     useEffect(() => {
-        setTimeout(() => {
+
             setFighterSelectionHistory([
                 ...fighterSelectionHistory,
                 {
@@ -20,7 +20,7 @@ function FighterSelector() {
                     time: (new Date()).toLocaleTimeString()
                 }
             ]);
-        }, 1000);
+
     }, [fighter])
 
     return (

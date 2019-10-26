@@ -8,16 +8,12 @@ const images = {
     "ken": Ken,
     "ryu": Ryu,
     "bison": Bison,
-    "vega": Vega, 
+    "vega": Vega,
 };
 
 class Fighter extends Component {
-    state = {
-        fighter: this.props.fighter
-    };
-
     render() {
-        const { fighter } = this.state;
+        const { fighter } = this.props;
         return (
             <div
                 style={{
@@ -28,7 +24,7 @@ class Fighter extends Component {
                     borderRadius: ".6rem",
                     height: "14rem",
                     width: "14rem"
-            }} />
+                }} > {fighter}</div>
         );
     }
 }

@@ -18,7 +18,7 @@ class Exercise1 extends Component {
         availableElements: [],
         selectedElements: []
     }
-    
+
     componentWillMount() {
         const getPokemonNumber = pokemonNumber => {
             if (pokemonNumber < 10) return `00${pokemonNumber}`;
@@ -59,7 +59,7 @@ class Exercise1 extends Component {
                                         <td className={classes.Action}>
                                             <PokeballIcon onClick={() => {
                                                 this.setState({
-                                                        selectedElements: this.state.availableElements.splice(index, 1).concat(this.state.selectedElements)
+                                                    selectedElements: this.state.availableElements.splice(index, 1).concat(this.state.selectedElements)
                                                 });
                                             }} />
                                         </td>
@@ -70,7 +70,7 @@ class Exercise1 extends Component {
                     </div>
                     <div className={classes.CaptureContainer}>
                         {this.state.selectedElements.map((element, index) => (
-                            <Card 
+                            <Card
                                 key={Math.random()}
                                 number={`#${element.number}`}
                                 name={element.name}

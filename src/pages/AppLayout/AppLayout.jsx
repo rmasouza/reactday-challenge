@@ -7,6 +7,7 @@ import Exercise3 from "../Exercise3/Exercise3";
 import Exercise4 from "../Exercise4/Exercise4";
 
 import Layout from "./Layout/Layout";
+import WeatherApp from "../WeatherApp/WeatherApp";
 
 const navigationItems = [{
     link: '/exercise1',
@@ -24,6 +25,10 @@ const navigationItems = [{
     link: '/exercise4',
     label: i18n.t("app.menu.exercise_4"),
     component: <Exercise4 />
+}, {
+    link: '/climao',
+    label:  'Weather App',
+    component: <WeatherApp />
 }];
 
 function AppLayout() {
