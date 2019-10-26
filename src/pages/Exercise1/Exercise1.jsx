@@ -45,26 +45,26 @@ class Exercise1 extends Component {
                     <div className={classes.AvailableContainer}>
                         <table className={classes.Table}>
                             <tbody>
-                                {this.state.availableElements.map((element, index) => (
-                                    <tr key={Math.random()}>
-                                        <td className={classes.Number}>
-                                            <div>{`#${element.number}`}</div>
-                                        </td>
-                                        <td className={classes.Description}>
-                                            <div className={classes.PokemonContainer}>
-                                                <img src={getPokemonIconURL(element.number)} alt="Pokemon Icon"/>
-                                                <span>{element.name}</span>
-                                            </div>
-                                        </td>
-                                        <td className={classes.Action}>
-                                            <PokeballIcon onClick={() => {
-                                                this.setState({
-                                                    selectedElements: this.state.availableElements.splice(index, 1).concat(this.state.selectedElements)
-                                                });
-                                            }} />
-                                        </td>
-                                    </tr>
-                                ))}
+                            {this.state.availableElements.map((element, index) => (
+                                <tr key={Math.random()}>
+                                    <td className={classes.Number}>
+                                        <div>{`#${element.number}`}</div>
+                                    </td>
+                                    <td className={classes.Description}>
+                                        <div className={classes.PokemonContainer}>
+                                            <img src={getPokemonIconURL(element.number)} alt="Pokemon Icon"/>
+                                            <span>{element.name}</span>
+                                        </div>
+                                    </td>
+                                    <td className={classes.Action}>
+                                        <PokeballIcon onClick={() => {
+                                            this.setState({
+                                                selectedElements: this.state.availableElements.splice(index, 1).concat(this.state.selectedElements)
+                                            });
+                                        }} />
+                                    </td>
+                                </tr>
+                            ))}
                             </tbody>
                         </table>
                     </div>
