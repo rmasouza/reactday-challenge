@@ -1,0 +1,25 @@
+@import "../../../sass/main";
+
+.ManMax {
+    display: grid;
+    grid-template:  auto /max-content max-content max-content max-content ;
+    grid-template-areas: "min-icon min-value max-icon max-value";
+    gap: 10px;
+}
+
+.VerticalManMax {
+    display: grid;
+    grid-template:  auto /max-content max-content max-content max-content ;
+    grid-template-areas: "min-icon min-value max-icon max-value";
+    color: white;
+}
+
+.Value {
+    font: Bold 16px/18px Arial;
+    letter-spacing: 0;
+    color: #4B6584;
+}
+
+.Icon {
+
+}

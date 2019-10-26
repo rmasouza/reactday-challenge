@@ -1,0 +1,12 @@
+.WeatherCard {
+    background-color: white;
+    box-shadow: 0 6px 12px #0000000F;
+    border-radius: 4px;
+    display: grid;
+    grid-template: max-content max-content max-content/ 1fr 1fr 1fr;
+    grid-template-areas: "city city minmax" "main-content main-content main-content" 'humidity velocity direction' ;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 16px;
+    max-width: 670px;
+}

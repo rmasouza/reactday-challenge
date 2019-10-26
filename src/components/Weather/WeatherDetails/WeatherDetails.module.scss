@@ -1,0 +1,36 @@
+.WeatherDetails {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 12px #0000001A;
+    border-radius: 4px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: min-content min-content auto;
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+    width: 180px;
+
+    > svg {
+        display: flex;
+        margin: auto;
+    }
+}
+
+.Text {
+    font: Regular 16px/18px Arial;
+    letter-spacing: 0;
+    color: #4B6584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Value {
+    font: Bold 28px/32px Arial;
+    letter-spacing: 0;
+    margin-top: auto;
+    color: #4B6584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

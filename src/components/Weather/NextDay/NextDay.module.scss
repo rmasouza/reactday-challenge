@@ -1,0 +1,39 @@
+.NextDay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 470px;
+    box-shadow: 0px 4px 8px #0000000F;
+    border-radius: 4px;
+    max-height: 90px;
+    background: transparent linear-gradient(90deg, #45AAF2 0%, #3867D6 100%) 0% 0% no-repeat padding-box;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Divisor {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    height: 100%;
+    padding: 0 10px;
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.StrongText {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+
+}
+
+.Text {
+    margin: 0;
+    font: Regular 16px/18px Arial;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}

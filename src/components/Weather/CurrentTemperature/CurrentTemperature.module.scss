@@ -1,0 +1,33 @@
+@import "../../../sass/main";
+
+.CurrentTemperature {
+    display: grid;
+    grid-template:  max-content max-content / max-content auto;
+    grid-template-areas: "icon temperature" "icon details";
+    gap: 10px;
+
+    max-width: 240px;
+}
+
+.Temperature {
+    font-size: 160px;
+    letter-spacing: 0;
+    color: #4B6584;
+    grid-area: temperature;
+}
+
+.Details {
+    grid-area: details;
+    border: 1px solid $color-weather-primary;
+    border-radius: 50px;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icon {
+    margin-top: 40px;
+    grid-area: icon;
+}

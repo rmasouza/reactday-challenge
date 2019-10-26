@@ -13,11 +13,11 @@ export default class WeatherService  {
             },
         });
 
-        if (response.status != 200) {
+        if (response.status !== 200) {
             throw response;
         }
 
-        const weatherResponse = {
+        return {
             status: response.status,
             message: response.statusText,
             data: {
@@ -29,6 +29,5 @@ export default class WeatherService  {
                 tempMin: response.data.main.temp_min,
             }
         };
-        return weatherResponse;
     }
 }

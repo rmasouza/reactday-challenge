@@ -1,0 +1,23 @@
+
+.WheatherStatus {
+    display: grid;
+    grid-auto-columns: max-content  max-content;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.Details {
+    font: Bold 23px/27px Arial;
+    letter-spacing: 0;
+    color: #4B6584;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.Icon {
+    width: 196px;
+    height: 110px;
+    margin-top: auto;
+}

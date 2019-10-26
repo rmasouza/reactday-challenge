@@ -1,0 +1,29 @@
+@import "../../../sass/main";
+
+.CurrentCity {
+    display: grid;
+    grid-template:  max-content max-content / max-content auto;
+    grid-template-areas: "icon city" "icon date";
+    gap: 10px;
+}
+
+.City {
+    grid-area: city;
+    font-size: 26px;
+    font: Bold 26px/31px Arial;
+    letter-spacing: 0;
+    color: #4B6584;
+    opacity: 1;
+}
+
+.Date {
+    grid-area: date;
+    font-size: 16px;
+    font: Regular 16px/18px Arial;
+    letter-spacing: 0;
+    color: #4B6584;
+}
+
+.Icon {
+    grid-area: icon;
+}
